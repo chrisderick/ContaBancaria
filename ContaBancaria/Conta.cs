@@ -21,20 +21,19 @@ namespace ContaBancaria
 
         public Conta(int s)
         {
-            this.Saldo = s;
+            Saldo = s;
         }
 
-        public void Deposita(double valorOperacao)
+        public void Deposita(double valor)
         {
-            this.Saldo += valorOperacao;
-
+            Saldo += valor;
         }
 
-        internal bool Saca(double valorOperacao)
+        internal bool Saca(double valor)
         {
-            if (valorOperacao <= this.Saldo)
+            if (valor <= Saldo)
             {
-                this.Saldo -= valorOperacao;
+                Saldo -= valor;
                 return true;
             }
             else

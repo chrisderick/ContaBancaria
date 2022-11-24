@@ -9,18 +9,19 @@ namespace ContaBancaria
 
         public string Nome { get; private set; }
 
-        public int idade { get; set; }
-        public string documentos { get; set; }
-        public string cpf { get; set; }
+        public int Idade { get; set; }
+        public string Documentos { get; set; }
+        public string Cpf { get; set; }
         
 
-        public bool PodeAbrirContaSozinho()
+        public bool PodeAbrirContaSozinho
         {
-
-            return (this.idade >= 18 ||
-            this.documentos.Contains("emancipacao")) &&
-                !string.IsNullOrEmpty(this.cpf);
-            
+            get
+            {
+                return (Idade >= 18 ||
+                Documentos.Contains("emancipacao")) &&
+                    !string.IsNullOrEmpty(Cpf);
+            }
         }
         /*
         public bool MaiorIdade()
@@ -32,7 +33,7 @@ namespace ContaBancaria
 
         public Cliente(string v)
         {
-            this.Nome = v;
+            Nome = v;
         }
 
         
