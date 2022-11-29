@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{6FD9177F-7E25-43D6-AEEC-349A3DA2DBF6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ExercCapt09</RootNamespace>
-    <AssemblyName>ExercCapt09</AssemblyName>
+    <RootNamespace>ContaBancaria</RootNamespace>
+    <AssemblyName>ContaBancaria</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="Cliente.cs" />
     <Compile Include="Conta.cs" />
+    <Compile Include="ContaCorrente.cs" />
+    <Compile Include="ContaPoupanca.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,6 +58,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TotalizadorDeContas.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -67,6 +70,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

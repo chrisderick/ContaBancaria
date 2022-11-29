@@ -5,31 +5,26 @@ namespace ContaBancaria
 {
     public class Conta
     {
-
-
-        private int v;
+        public int Numero { get; set; }
+        public double Saldo { get; private set; }
+        public int Tipo { get; set; }
+        internal Cliente Titular { get; set; }
 
         public Conta()
         {
         }
-
-        public int Numero { get; set; }
-        public double Saldo { get; private set; }
-        public int V { get; }
-        internal Cliente Titular { get; set; }
-
 
         public Conta(int s)
         {
             Saldo = s;
         }
 
-        public void Deposita(double valor)
+        public virtual void Deposita(double valor)
         {
             Saldo += valor;
         }
 
-        internal bool Saca(double valor)
+        public virtual bool Saca(double valor)
         {
             if (valor <= Saldo)
             {
@@ -37,10 +32,7 @@ namespace ContaBancaria
                 return true;
             }
             else
-            {
                 return false;
-            }
-            //this.Saldo -= valorOperacao;
         }
 
 

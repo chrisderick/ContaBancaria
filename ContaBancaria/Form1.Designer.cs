@@ -45,7 +45,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textoCPF = new System.Windows.Forms.TextBox();
             this.textoIdade = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -210,17 +209,6 @@
             this.textoIdade.TabIndex = 12;
             this.textoIdade.TextChanged += new System.EventHandler(this.textoIdade_TextChanged);
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(307, 240);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(311, 28);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Análise dos Dados Acima";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.textoValor);
@@ -247,7 +235,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.textoCPF);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textoEmancipado);
@@ -285,7 +272,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textoCPF;
         private System.Windows.Forms.TextBox textoIdade;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox1;
     }
 }
