@@ -14,9 +14,9 @@ namespace ContaBancaria
         {
         }
 
-        public Conta(int s)
+        public Conta(int saldo)
         {
-            Saldo = s;
+            Saldo = saldo;
         }
 
         public virtual void Deposita(double valor)
